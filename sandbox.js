@@ -14,4 +14,4 @@ isBlackBelt = true;
 var circ = function (diameter) {
     return diameter * Math.PI;
 };
-console.log(circ(7.5)); //NaN
+console.log(circ(7.5));
