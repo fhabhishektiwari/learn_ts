@@ -1,17 +1,32 @@
-var character = "mario";
-var ageP = 30;
-var isBlackBelt = false;
-// character=20
-character = "Lungi";
-// age = "yoshi";
-ageP = 40;
-// isBlackBelt='yes'
-isBlackBelt = true;
-// const circ = (diameter) => {
-//   return diameter * Math.PI;
-// };
-// console.log(circ("hello")); //NaN
-var circ = function (diameter) {
-    return diameter * Math.PI;
+// array
+var names = ["lungi", "mario", "yoshi"];
+names.push("toad");
+// names.push(3)
+// names[0] = 3;
+// names[0] = "ryu";
+var numbers = [10, 20, 30, 40];
+numbers.push(25);
+// numbers.push('shaun')
+// numbers[0] = "shaun";
+// numbers[0] = 50;
+var mixed = ["ken", 4, "chun-li", 8, 9];
+mixed.push("ryu");
+mixed.push(90);
+mixed[0] = 100;
+// console.log(mixed)
+// objects
+var ninja = {
+    name: "mario",
+    belt: "black",
+    age: 30,
 };
-console.log(circ(7.5));
+ninja.age = 40;
+ninja.name = "ryu";
+// ninja.age = "30";
+// ninja.skills = ["fighting", "sneaking"];//you can't assign new property
+ninja = {
+    name: "yoshi",
+    belt: "orange",
+    age: 40,
+    // skills:['fighting','sneaking']
+};
