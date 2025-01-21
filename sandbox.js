@@ -1,31 +1,17 @@
-// explicit types
-var character;
-var ageP;
-var isLoggedIn;
-// ageP = "luigi";
-ageP = 30;
-// isLoggedIn=25;
-isLoggedIn = true;
-// arrays
-var ninjas = [];
-ninjas.push("shaun");
-// union types
+var ageP = 25;
+ageP = true;
+console.log(ageP);
+ageP = "hello";
+console.log(ageP);
+ageP = { name: "luigi" };
+console.log(ageP);
 var mixed = [];
-mixed.push("Ryu");
-mixed.push(23);
-mixed.push(true);
+mixed.push(5);
+mixed.push("mario");
+mixed.push(false);
 console.log(mixed);
-var uid;
-uid = "123";
-uid = 123;
-// uid = true;
-// objects
-var ninjasOne;
-ninjasOne = { name: "yoshi", age: 20 };
-var ninjasTwo;
-ninjasTwo = {
-    name: "mario",
-    age: 30,
-    beltColor: "orange",
-    // skills: []//skills does not exist
-};
+var ninja;
+ninja = { name: "yoshi", age: 30 };
+console.log(ninja);
+ninja = { name: 30, age: "yoshi" };
+console.log(ninja);
