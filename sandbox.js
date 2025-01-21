@@ -1,32 +1,31 @@
-// array
-var names = ["lungi", "mario", "yoshi"];
-names.push("toad");
-// names.push(3)
-// names[0] = 3;
-// names[0] = "ryu";
-var numbers = [10, 20, 30, 40];
-numbers.push(25);
-// numbers.push('shaun')
-// numbers[0] = "shaun";
-// numbers[0] = 50;
-var mixed = ["ken", 4, "chun-li", 8, 9];
-mixed.push("ryu");
-mixed.push(90);
-mixed[0] = 100;
-// console.log(mixed)
+// explicit types
+var character;
+var ageP;
+var isLoggedIn;
+// ageP = "luigi";
+ageP = 30;
+// isLoggedIn=25;
+isLoggedIn = true;
+// arrays
+var ninjas = [];
+ninjas.push("shaun");
+// union types
+var mixed = [];
+mixed.push("Ryu");
+mixed.push(23);
+mixed.push(true);
+console.log(mixed);
+var uid;
+uid = "123";
+uid = 123;
+// uid = true;
 // objects
-var ninja = {
+var ninjasOne;
+ninjasOne = { name: "yoshi", age: 20 };
+var ninjasTwo;
+ninjasTwo = {
     name: "mario",
-    belt: "black",
     age: 30,
-};
-ninja.age = 40;
-ninja.name = "ryu";
-// ninja.age = "30";
-// ninja.skills = ["fighting", "sneaking"];//you can't assign new property
-ninja = {
-    name: "yoshi",
-    belt: "orange",
-    age: 40,
-    // skills:['fighting','sneaking']
+    beltColor: "orange",
+    // skills: []//skills does not exist
 };
