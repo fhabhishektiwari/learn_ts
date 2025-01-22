@@ -1,20 +1,10 @@
 "use strict";
-let greet;
-greet = () => {
-    console.log("Hello, world!");
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-// const add = (a: number, b: number, c?: number | string) => { // here c?: number | string is optional parameter
-//   console.log(a + b);
-//   console.log(c);
-// };
-const add = (a, b, c = 10) => {
-    //here c: number | string = 10 is default parameter and function is void type
-    console.log(a + b);
-    console.log(c);
+const greet = (user) => {
+    console.log(`${user.name} says hello`);
 };
-add(5, 10);
-add(5, 10, "hello");
-const minus = (a, b) => {
-    return a - b;
+const greetagin = (user) => {
+    console.log(`${user.name} says hello`);
 };
-let result = minus(10, 7); //always specify the return type of the function is number
